@@ -20,6 +20,7 @@ final class MainViewController: UIViewController {
     
     /// アラートボタン押下
     @IBAction private func tappedShowAlertButton(_ sender: UIButton) {
+        showAlert()
     }
     
     /// テーブルビューアラートボタン押下
@@ -31,4 +32,21 @@ final class MainViewController: UIViewController {
 
 private extension MainViewController {
     
+    /// アラートの表示
+    private func showAlert() {
+        
+        let alert = UIAlertController(title: "Title",
+                                      message: "Message",
+                                      preferredStyle:  .alert)
+        
+        let action = UIAlertAction(title: "OK",
+                                   style: .default,
+                                   handler:{ _ in
+                                    print("OK")
+        })
+        
+        alert.addAction(action)
+
+        present(alert, animated: true, completion: nil)
+    }
 }

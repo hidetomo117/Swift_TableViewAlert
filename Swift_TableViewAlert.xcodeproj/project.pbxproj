@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		56546FAF23640478008649D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56546FAE23640478008649D3 /* AppDelegate.swift */; };
 		56546FB123640478008649D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56546FB023640478008649D3 /* SceneDelegate.swift */; };
-		56546FB323640478008649D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56546FB223640478008649D3 /* ViewController.swift */; };
+		56546FB323640478008649D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56546FB223640478008649D3 /* MainViewController.swift */; };
 		56546FB623640478008649D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56546FB423640478008649D3 /* Main.storyboard */; };
 		56546FB82364047A008649D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56546FB72364047A008649D3 /* Assets.xcassets */; };
 		56546FBB2364047A008649D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56546FB92364047A008649D3 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		56546FAB23640478008649D3 /* Swift_TableViewAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_TableViewAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56546FAE23640478008649D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56546FB023640478008649D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56546FB223640478008649D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56546FB223640478008649D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		56546FB523640478008649D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56546FB72364047A008649D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56546FBA2364047A008649D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,13 +99,8 @@
 		56546FAD23640478008649D3 /* Swift_TableViewAlert */ = {
 			isa = PBXGroup;
 			children = (
-				56546FAE23640478008649D3 /* AppDelegate.swift */,
-				56546FB023640478008649D3 /* SceneDelegate.swift */,
-				56546FB223640478008649D3 /* ViewController.swift */,
-				56546FB423640478008649D3 /* Main.storyboard */,
-				56546FB72364047A008649D3 /* Assets.xcassets */,
-				56546FB92364047A008649D3 /* LaunchScreen.storyboard */,
-				56546FBC2364047A008649D3 /* Info.plist */,
+				56546FDF236405BF008649D3 /* ViewController */,
+				56546FDE2364056A008649D3 /* Other */,
 			);
 			path = Swift_TableViewAlert;
 			sourceTree = "<group>";
@@ -126,6 +121,43 @@
 				56546FD22364047A008649D3 /* Info.plist */,
 			);
 			path = Swift_TableViewAlertUITests;
+			sourceTree = "<group>";
+		};
+		56546FDE2364056A008649D3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				56546FAE23640478008649D3 /* AppDelegate.swift */,
+				56546FB023640478008649D3 /* SceneDelegate.swift */,
+				56546FB72364047A008649D3 /* Assets.xcassets */,
+				56546FBC2364047A008649D3 /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		56546FDF236405BF008649D3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56546FE1236405D6008649D3 /* Main */,
+				56546FE0236405CB008649D3 /* Launch */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		56546FE0236405CB008649D3 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				56546FB92364047A008649D3 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		56546FE1236405D6008649D3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				56546FB223640478008649D3 /* MainViewController.swift */,
+				56546FB423640478008649D3 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56546FB323640478008649D3 /* ViewController.swift in Sources */,
+				56546FB323640478008649D3 /* MainViewController.swift in Sources */,
 				56546FAF23640478008649D3 /* AppDelegate.swift in Sources */,
 				56546FB123640478008649D3 /* SceneDelegate.swift in Sources */,
 			);
@@ -436,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LY3B67W33;
-				INFOPLIST_FILE = Swift_TableViewAlert/Info.plist;
+				INFOPLIST_FILE = Swift_TableViewAlert/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LY3B67W33;
-				INFOPLIST_FILE = Swift_TableViewAlert/Info.plist;
+				INFOPLIST_FILE = Swift_TableViewAlert/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

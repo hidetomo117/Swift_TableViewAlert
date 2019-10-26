@@ -15,6 +15,8 @@
 		56546FBB2364047A008649D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56546FB92364047A008649D3 /* LaunchScreen.storyboard */; };
 		56546FC62364047A008649D3 /* Swift_TableViewAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56546FC52364047A008649D3 /* Swift_TableViewAlertTests.swift */; };
 		56546FD12364047A008649D3 /* Swift_TableViewAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56546FD02364047A008649D3 /* Swift_TableViewAlertUITests.swift */; };
+		56546FE923640C5C008649D3 /* TableViewAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56546FE823640C5C008649D3 /* TableViewAlert.storyboard */; };
+		56546FEB23640C7F008649D3 /* TableViewAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56546FEA23640C7F008649D3 /* TableViewAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		56546FCC2364047A008649D3 /* Swift_TableViewAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_TableViewAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56546FD02364047A008649D3 /* Swift_TableViewAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_TableViewAlertUITests.swift; sourceTree = "<group>"; };
 		56546FD22364047A008649D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56546FE823640C5C008649D3 /* TableViewAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewAlert.storyboard; sourceTree = "<group>"; };
+		56546FEA23640C7F008649D3 /* TableViewAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		56546FDF236405BF008649D3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				56546FE723640C41008649D3 /* TableViewAlert */,
 				56546FE1236405D6008649D3 /* Main */,
 				56546FE0236405CB008649D3 /* Launch */,
 			);
@@ -158,6 +163,15 @@
 				56546FB423640478008649D3 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		56546FE723640C41008649D3 /* TableViewAlert */ = {
+			isa = PBXGroup;
+			children = (
+				56546FEA23640C7F008649D3 /* TableViewAlertViewController.swift */,
+				56546FE823640C5C008649D3 /* TableViewAlert.storyboard */,
+			);
+			path = TableViewAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +281,7 @@
 				56546FBB2364047A008649D3 /* LaunchScreen.storyboard in Resources */,
 				56546FB82364047A008649D3 /* Assets.xcassets in Resources */,
 				56546FB623640478008649D3 /* Main.storyboard in Resources */,
+				56546FE923640C5C008649D3 /* TableViewAlert.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +309,7 @@
 				56546FB323640478008649D3 /* MainViewController.swift in Sources */,
 				56546FAF23640478008649D3 /* AppDelegate.swift in Sources */,
 				56546FB123640478008649D3 /* SceneDelegate.swift in Sources */,
+				56546FEB23640C7F008649D3 /* TableViewAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,7 @@ final class MainViewController: UIViewController {
     
     /// テーブルビューアラートボタン押下
     @IBAction private func tappedShowTableViewAlertButton(_ sender: UIButton) {
+        showTableViewAlert()
     }
 }
 
@@ -46,7 +47,13 @@ private extension MainViewController {
         })
         
         alert.addAction(action)
-
         present(alert, animated: true, completion: nil)
+    }
+    
+    /// テーブルビューアラートの表示
+    private func showTableViewAlert() {
+        let storyboard = UIStoryboard(name: "TableViewAlert", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "TableViewAlertViewController")
+        present(vc, animated: true, completion: nil)
     }
 }

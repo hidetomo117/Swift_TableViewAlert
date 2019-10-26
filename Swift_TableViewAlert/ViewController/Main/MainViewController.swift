@@ -10,8 +10,25 @@ import UIKit
 
 final class MainViewController: UIViewController {
 
+    // MARK: - View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - IBAction
+    
+    /// アラートボタン押下
+    @IBAction private func tappedShowAlertButton(_ sender: UIButton) {
+    }
+    
+    /// テーブルビューアラートボタン押下
+    @IBAction private func tappedShowTableViewAlertButton(_ sender: UIButton) {
+    }
 }
 
+// MARK: - Private function
+
+private extension MainViewController {
+    
+}
